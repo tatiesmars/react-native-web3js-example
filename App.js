@@ -4,11 +4,6 @@ import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font } from 'expo';
 import { Ionicons } from '@expo/vector-icons';
 import RootNavigation from './navigation/RootNavigation';
-import Web3 from './services/web3/web3';
-
-const web3 = new Web3('http://192.168.199.159:7545');
-
-web3.eth.getAccounts(console.log);
 
 export default class App extends React.Component {
   state = {
